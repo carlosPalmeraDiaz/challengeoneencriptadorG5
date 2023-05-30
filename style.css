@@ -1,50 +1,47 @@
+*{
 
-
+    font-family:'Inter', sans-serif;
+}
 body{
-    background-color: #fafafafc;
+    background-color: #f4f4fc;
+    width: 1080px;
+    height: 600px;
 }
 
 header{
-    width: 100%;
-    height: 70px;
-}
-
-.logo{
     width: 100px;
     height: 50px;
     padding-top: 20px;
     padding-left: 40px;
 }
 
-main{
+.logo{
     width: 100%;
-    height: 100%;
+    height: 50px;
+    padding-top: 20px;
+    padding-left: 40px;
+}
+
+main{
+    position: absolute;
+    width: 100%;
+    height: 70%;
     display: flex;
     justify-content: space-between;
-
 }
 
-section{
-    width: 40%;
-    height: 100%;    
-}
-
-.section1{
-    width: 70%;
-}
 
 .contenedorCajaTexto{
     position: absolute;
     left: 200px;
     top: 100px;
     padding-left: 100px;
-    width: 30%;
-    height: 50%;
-    
+    width: 800px;
+    height: 300px;   
 }
 
 .cajaTexto{
-    width: 100%;
+    width: 60%;
     height: 100%;
     border: none;
     background-color: #f4f4fc; 
@@ -61,22 +58,23 @@ section{
 
 .alerta{
     position: absolute;
-    top: 450px;
+    top: 750px;
     left: 370px;
     display: flex;
     color: #495057;
 }
 
 .contenedorBotones{    
-    position: relative;
-    top: 350px;
-    text-align: center;
-    margin-top: 70px; 
+    position: absolute;
+    top: 800px;
+    height: 80px;
+    padding-left: 15%;
+    padding-top: 15px;
 }
 
 .btn-encriptar{
-    width: 25%;
-    height: 40px;
+    width: 328px;
+    height: 67px;
     border-radius: 24px;
     background-color: #0A3871;
     color: white;
@@ -88,9 +86,9 @@ section{
     cursor: pointer;
 }
 
-.btn-deseencriptar{
-    width: 25%;
-    height: 40px;
+.btn-desencriptar{
+    width: 328px;
+    height: 67px;
     border-radius: 24px;
     background-color: #D8DFE8;
     color: #0A3871;
@@ -101,16 +99,19 @@ section{
     cursor: pointer;
 }
 
-.seccion2{
-    width: 30%;
-    height: 40%;
+.seccion2{   
+    display: block; 
+    position: absolute;
+    float: right;
+    width: 400px;
+    height: 840px;
+    right: 30px;
+    padding-right: 20px;
     background-color: #ffffff;
-    border-radius: 20px;
-    margin-right: 20px;
-    resize: none;
-    font-size: 25px;
-    
- }
+    box-sizing: border-box;
+    border-radius: 32px;
+    box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.50);
+}
 
 .contenedormunieco{
     width: 100%;
@@ -148,12 +149,12 @@ section{
 
 .contenedor-resultado{
     position: absolute;
-    bottom: 410px;
+    bottom: 320px;
     width: 320px;
     height: 450px;
     padding: 0;
     box-sizing: border-box;
-    margin-left: 25px;
+    margin-left: 40px;
     text-align: center;
 }
 
@@ -164,18 +165,17 @@ section{
 }
 
 .contenedor-copiar{
-    text-align: center;
-    margin-top: 45px;
+    display: flex;
+    position: absolute;
     bottom: 400px;
     top: 700px;
+    background-color: aqua;
     padding-left: 40px;
-    margin-bottom: 20px;
-    
 }
 
 .btn-copiar{
-    width: 128px;
-    height: 60px;
+    width: 328px;
+    height: 67px;
     border-radius: 24px;
     background-color: #ffffff;
     color: #0A3871;
@@ -184,15 +184,18 @@ section{
     font-family: 'Inter', sans-serif;
     border: 1px solid #0A3871;
     cursor: pointer;
-    top: 20px;
+    position: relative;
+    top: 50px;
     right: 4px;
-    text-align: center;
 }
 
+.ocultar{
+    display: none;
+}
 
-footer{
+footer{ 
     width: 100%;
-    height: 50px;
+    height: 50px;    
+    padding-top: 1080px;
     text-align: center;
-    
 }
